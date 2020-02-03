@@ -1,0 +1,232 @@
+.login {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  max-width: 21.45em;
+  width: 100%;
+  max-height: 17.75em;
+  height: 100%;
+  position: relative;
+  &__title {
+    color: inherit;
+    font-family: "Helvetica Neue Bold";
+    font-size: 2em;
+    font-weight: 500;
+  }
+  &__description {
+    color: #616983;
+    font-family: "Helvetica Neue";
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 47.85px;
+  }
+  &__login-form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: none;
+    color: inherit;
+    background: #10172f;
+    margin: 10px 0;
+    max-width: 18em;
+    input {
+      background: inherit;
+      border: inherit;
+      border-bottom: 1.5px solid #616983;
+      line-height: 48px;
+      margin-bottom: 10px;
+      font-size: 1em;
+      font-weight: 300;
+      color:inherit;
+      margin-bottom: 30px;
+      &::placeholder {
+        color: #616983;
+        font-family: "Helvetica Neue Bold";
+        font-size: 1em;
+        font-weight: 500;
+        font-size: 1em;
+        font-weight: 600;
+      }
+      &:focus {
+        outline: none;
+        border-bottom: 1.5px solid #126bd5;
+        &::placeholder {
+          color: #126bd5;
+        }
+      }
+    }
+    .__emailInput {
+      transition: 0.5s;
+      &-valid {
+        border-bottom: 1.5px solid #009933;
+        transition: 0.5s;
+      }
+      &-invalid {
+        border-bottom: 1.5px solid #cc0000;
+        transition: 0.5s;
+        &::placeholder {
+          color: #cc0000;
+        }
+        animation: invalid_input 0.1s ease 1;
+      }
+      &-valid:focus {
+        border-bottom: 1.5px solid #009933;
+        transition: 0.5s;
+      }
+      &-invalid:focus {
+        border-bottom: 1.5px solid #cc0000;
+        transition: 0.5s;
+        &::placeholder {
+          color: #cc0000;
+        }
+      }
+    }
+    .__passwordInput {
+      transition: 0.5s;
+      &-valid {
+        border-bottom: 1.5px solid #009933;
+        transition: 0.5s;
+      }
+      &-invalid {
+        border-bottom: 1.5px solid #cc0000;
+        transition: 0.5s;
+        &::placeholder {
+          color: #cc0000;
+        }
+        animation: invalid_input 0.1s ease 1;
+      }
+      &-valid:focus {
+        border-bottom: 1.5px solid #009933;
+        transition: 0.5s;
+      }
+      &-invalid:focus {
+        border-bottom: 1.5px solid #cc0000;
+        transition: 0.5s;
+        &::placeholder {
+          color: #cc0000;
+        }
+      }
+    }
+    .emailErrors {
+      position: absolute;
+      right: -10em;
+      max-width: 8em;
+      width: 100%;
+      background-color: #fff;
+      color: #616983;
+      font-family: "Helvetica Neue";
+      font-size: 1em;
+      padding: 10px;
+      border-radius: 5px;
+      transition: opacity 0.5s;
+      &-hide {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .content {
+        position: relative;
+        .triangle {
+          position: absolute;
+          left: -1.8em;
+          top: 0;
+          border: 9px solid transparent;
+          border-right: 10px solid #fff;
+          display: block;
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+    .passwordErrors {
+      position: absolute;
+      right: -10em;
+      bottom: 6.5em;
+      max-width: 8em;
+      width: 100%;
+      background-color: #fff;
+      color: #616983;
+      font-family: "Helvetica Neue";
+      font-size: 1em;
+      padding: 10px;
+      border-radius: 5px;
+      transition: opacity 0.5s;
+      &-hide {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .content {
+        position: relative;
+        .triangle {
+          position: absolute;
+          left: -1.8em;
+          top: 0;
+          border: 9px solid transparent;
+          border-right: 10px solid #fff;
+          display: block;
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+    button {
+      margin: 16px 0;
+      border: inherit;
+      border-radius: 3px;
+      background-image: linear-gradient(-256deg, #127ef9 , #54c3fe 30%);
+      opacity: 0.82;
+      font-family: "Helvetica Neue Bold";
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 3em;
+      background-size: 400% 400%;
+      transition: 0.5s;
+      span {
+        img {
+          width: 1em;
+          transition: 0.5s;
+        }
+      }
+      &:hover span img{
+        transform: translate(10px);
+      }
+      &:hover {
+        animation: button_invers 3s ease 0s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+  &__forgot-password{
+    color: #616983;
+    font-family: "Helvetica Neue";
+    font-weight: 600;
+    line-height: 3em;
+    a {
+      text-decoration: none;
+      color: #3a91e2;
+      margin-left: 5px;
+    }
+  }
+}
+
+@keyframes button_invers{
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes invalid_input{
+  0% {
+		transform: translate(10px);
+	}
+	100% {
+		transform: translate(-10px);
+	}
+}
