@@ -11,8 +11,10 @@ function App() {
         <div className="page-container">
             <Support />
             <PageContent />
+            <div className="pageConten-bg"></div>
         </div>
       </Router>
+
     </div>
   );
 }

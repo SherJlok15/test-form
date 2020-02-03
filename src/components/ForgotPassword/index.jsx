@@ -5,16 +5,6 @@ import './ForgotPassword.scss';
 import left_arrow from '../../images/return.svg';
 
 const ForgotPassword = (props) => {
-  let emailInputBorder = '';
-  if (props.emailInputTouchedBool && props.email_valid || props.email_valid) {
-    emailInputBorder = '-valid'
-  } else if (props.emailInputTouchedBool && !props.email_valid) {
-    emailInputBorder = '-invalid'
-  } else {
-    emailInputBorder = ''
-  }
-
-
   return (
     <div className="forgot-password">
       <div className={props.forgotPasswordFormSubmited ? "forgot-password__info-block--visible": "forgot-password__info-block"}>

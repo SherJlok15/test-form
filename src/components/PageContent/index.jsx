@@ -4,13 +4,12 @@ import { LoginPage, ForgotPassword, UserPage } from '../../modules';
 
 const PageContent = (props) => {
   return (
-    <>
+    <div>
       <Switch>
         <Route path="/" exact component={props.logged_in ? UserPage : LoginPage}/>
         <Route path="/forgot-password" component={ForgotPassword}/>
       </Switch>
-      <div className="pageConten-bg"></div>
-    </>
+    </div>
   );
 }
 
