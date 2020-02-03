@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/test-form/static/css/main.cdb9bd33.chunk.css",
+    "main.js": "/test-form/static/js/main.43cd7b89.chunk.js",
+    "main.js.map": "/test-form/static/js/main.43cd7b89.chunk.js.map",
+    "runtime-main.js": "/test-form/static/js/runtime-main.16e6fc16.js",
+    "runtime-main.js.map": "/test-form/static/js/runtime-main.16e6fc16.js.map",
+    "static/js/2.5818e058.chunk.js": "/test-form/static/js/2.5818e058.chunk.js",
+    "static/js/2.5818e058.chunk.js.map": "/test-form/static/js/2.5818e058.chunk.js.map",
+    "index.html": "/test-form/index.html",
+    "precache-manifest.47bfda22b971e1abb179cfd7aeab84fc.js": "/test-form/precache-manifest.47bfda22b971e1abb179cfd7aeab84fc.js",
+    "service-worker.js": "/test-form/service-worker.js",
+    "static/css/main.cdb9bd33.chunk.css.map": "/test-form/static/css/main.cdb9bd33.chunk.css.map",
+    "static/js/2.5818e058.chunk.js.LICENSE.txt": "/test-form/static/js/2.5818e058.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/test-form/static/media/right_bg.c403892b.png",
+    "static/media/return.svg": "/test-form/static/media/return.aebe8918.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16e6fc16.js",
+    "static/js/2.5818e058.chunk.js",
+    "static/css/main.cdb9bd33.chunk.css",
+    "static/js/main.43cd7b89.chunk.js"
+  ]
+}
